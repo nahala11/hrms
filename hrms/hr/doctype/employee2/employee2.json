@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2023-03-31 15:53:33.218847",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_id",
+  "first_name",
+  "last_name",
+  "username",
+  "full",
+  "date",
+  "child_table",
+  "link"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "label": "employee_id"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "first name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "last name"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "username"
+  },
+  {
+   "fieldname": "full",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "full name",
+   "options": "f\"{doc.first_name} {doc.last_name}\"",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "child_table",
+   "fieldtype": "Table",
+   "label": "child",
+   "options": "table2"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Link",
+   "label": "link",
+   "options": "employee1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-14 10:12:28.855554",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "employee2",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
